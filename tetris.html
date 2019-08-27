@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/tetris.css" />
+    <title>MAX's tetris game</title>
+</head>
+<body>
+    <div id="app" class="main">
+        <div id="next" class="next">
+            <div id="next__cellbox" class="next__cellbox">
+
+            </div>
+        </div>
+        <div id="grid__cellbox" class="grid__cellbox">
+        </div>
+        <div class="tetris__keyboard">
+
+        </div>
+        <div class="tetris__info">
+            <p id="time"></p>
+            <p id="score"></p>
+            <p id="level"></p>
+        </div>
+        <div class="buttons">
+            <a id="start" class="start">開始遊戲</a>
+        </div>
+        <div class="keyboard">
+            <div class="keyboard__row">
+                <a class="keyboard__btn" data-keyCode="38">↑</a>
+            </div>
+            <div class="keyboard__row">
+                <a class="keyboard__btn" data-keyCode="37">←</a>
+                <a class="keyboard__btn" data-keyCode="40">↓</a>
+                <a class="keyboard__btn" data-keyCode="39">→</a>
+            </div>
+            <div class="keyboard__row">
+                <a class="keyboard__btn keyboard__btn-space" data-keyCode="32">SPACE</a>
+            </div>
+        </div>
+        <div class="sound">
+            <audio id="audio">
+              <source src="" type="audio/mpeg" />
+            </audio>
+        </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <script src="js/tetris.js"></script>
+</body>
+</html>
