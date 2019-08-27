@@ -101,7 +101,7 @@ function reset(callback) {
     keyboard.forEach(function(element) {
         element.removeEventListener('click', keyUpEvent, false);
     });
-    if (typeof callback ==='function') {
+    if (typeof callback === 'function') {
         callback();
     }
 };
